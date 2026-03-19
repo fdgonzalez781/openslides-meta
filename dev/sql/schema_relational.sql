@@ -1099,7 +1099,7 @@ CREATE TABLE poll_t (
     type varchar(256) NOT NULL CONSTRAINT enum_poll_type CHECK (type IN ('analog', 'named', 'pseudoanonymous', 'cryptographic')),
     backend varchar(256) NOT NULL CONSTRAINT enum_poll_backend CHECK (backend IN ('long', 'fast')) DEFAULT 'fast',
     is_pseudoanonymized boolean,
-    pollmethod varchar(256) NOT NULL CONSTRAINT enum_poll_pollmethod CHECK (pollmethod IN ('Y', 'YN', 'YNA', 'N')),
+    pollmethod varchar(256) NOT NULL CONSTRAINT enum_poll_pollmethod CHECK (pollmethod IN ('Y', 'YN', 'YNA', 'N', 'STV')),
     state varchar(256) CONSTRAINT enum_poll_state CHECK (state IN ('created', 'started', 'finished', 'published')) DEFAULT 'created',
     min_votes_amount integer CONSTRAINT minimum_min_votes_amount CHECK (min_votes_amount >= 1) DEFAULT 1,
     max_votes_amount integer CONSTRAINT minimum_max_votes_amount CHECK (max_votes_amount >= 1) DEFAULT 1,
