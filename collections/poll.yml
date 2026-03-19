@@ -39,6 +39,7 @@ pollmethod:
   - "YN"
   - "YNA"
   - "N"
+  - "STV"
   restriction_mode: A
 state:
   type: string
