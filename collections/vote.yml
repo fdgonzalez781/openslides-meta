@@ -37,6 +37,10 @@ fields:
     to: user/delegated_vote_ids
     reference: user
     restriction_mode: A
+  rank:
+    type: number
+    restriction_mode: A
+    constant: true
   meeting_id:
     type: relation
     to: meeting/vote_ids
