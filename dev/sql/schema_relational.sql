@@ -1427,6 +1427,7 @@ CREATE TABLE vote_t (
     option_id integer NOT NULL,
     user_id integer,
     delegated_user_id integer,
+    rank integer,
     meeting_id integer NOT NULL
 );
 
