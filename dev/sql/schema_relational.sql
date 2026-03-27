@@ -1108,6 +1108,7 @@ CREATE TABLE poll_t (
     global_no boolean DEFAULT False,
     global_abstain boolean DEFAULT False,
     onehundred_percent_base varchar(256) NOT NULL CONSTRAINT enum_poll_onehundred_percent_base CHECK (onehundred_percent_base IN ('Y', 'YN', 'YNA', 'N', 'valid', 'cast', 'entitled', 'entitled_present', 'disabled')) DEFAULT 'disabled',
+    quota decimal(16,6),
     votesvalid decimal(16,6),
     votesinvalid decimal(16,6),
     votescast decimal(16,6),

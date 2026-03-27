@@ -92,6 +92,9 @@ onehundred_percent_base:
   - "disabled"
   default: disabled
   restriction_mode: A
+quota:
+  type: decimal(6)
+  restriction_mode: A
 votesvalid:
   type: decimal(6)
   restriction_mode: B
