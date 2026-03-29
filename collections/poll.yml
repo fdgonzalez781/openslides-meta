@@ -93,7 +93,7 @@ onehundred_percent_base:
   default: disabled
   restriction_mode: A
 round_by_round:
-  type: JSON
+  type: string[]
   restriction_mode: A
 quota:
   type: decimal(6)

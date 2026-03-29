@@ -1,7 +1,7 @@
 
 -- schema_relational.sql for initial database setup OpenSlides
 -- Code generated. DO NOT EDIT.
--- MODELS_YML_CHECKSUM = 'ad39aa5360457707d3051a4d25c6ee23'
+-- MODELS_YML_CHECKSUM = '6fefe0497b4fbdd977260a636615e328'
 
 
 -- Function and meta table definitions
@@ -1108,7 +1108,7 @@ CREATE TABLE poll_t (
     global_no boolean DEFAULT False,
     global_abstain boolean DEFAULT False,
     onehundred_percent_base varchar(256) NOT NULL CONSTRAINT enum_poll_onehundred_percent_base CHECK (onehundred_percent_base IN ('Y', 'YN', 'YNA', 'N', 'valid', 'cast', 'entitled', 'entitled_present', 'disabled')) DEFAULT 'disabled',
-    round_by_round jsonb,
+    round_by_round varchar(256)[],
     quota decimal(16,6),
     votesvalid decimal(16,6),
     votesinvalid decimal(16,6),
